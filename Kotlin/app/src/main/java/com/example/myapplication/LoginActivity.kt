@@ -59,7 +59,7 @@ class LoginActivity : AppCompatActivity(){
             val jor=JsonObjectRequest(Request.Method.POST,url,jO,Response.Listener { res->
                 try {
                     if(res.getString("success").equals("1")){
-                        val intent=Intent(this@LoginActivity,MainActivity::class.java)
+                        val intent=Intent(this@LoginActivity,MainActivity2::class.java)
                         intent.putExtra("UserName",res.getString("user"))
                         startActivity(intent)
                         emailinput.text.clear()
