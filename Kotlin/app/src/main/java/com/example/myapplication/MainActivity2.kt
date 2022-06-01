@@ -65,7 +65,7 @@ class MainActivity2 : AppCompatActivity() {
         if(name.isEmpty()  || email.isEmpty()){
             Toast.makeText(this , "Please enter requierd field", Toast.LENGTH_SHORT).show()
         } else{
-            val std = StudentModel(id=1,name = name, email = email )
+                val std = StudentModel(id=1,name = name, email = email )
             val status = sqliteHelper.insertStudent(std)
             //Check insert success or not success
                    if (status >-1){
